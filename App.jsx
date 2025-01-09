@@ -68,17 +68,15 @@ export default function App() {
         'Coordinates and Distance',
         `Source: \nLatitude: ${source.latitude.toFixed(
           4,
-        )}, Longitude: ${source.longitude.toFixed(
+        )}, \nLongitude: ${source.longitude.toFixed(
           4,
         )}\n\nDestination: \nLatitude: ${destination.latitude.toFixed(
           4,
-        )}, Longitude: ${destination.longitude.toFixed(
+        )},\nLongitude: ${destination.longitude.toFixed(
           4,
-        )}\n\nDistance between source and destination: ${distance.toFixed(
+        )}\n\nDistance : ${distance.toFixed(
           2,
-        )} kilometers\n\n MidPoint between Source & Destination : ${midpointCalculate.toFixed(
-          2,
-        )} kilometers`,
+        )} kilometers\n\n MidPoint: ${midpointCalculate.toFixed(2)} kilometers`,
       );
     } else {
       Alert.alert(
@@ -262,7 +260,7 @@ export default function App() {
           <View style={styles.viewChanger}>
             <Text
               style={{
-                fontSize: 17,
+                fontSize: 15,
                 fontWeight: 'bold',
                 fontFamily: 'Poppins-Bold',
               }}>
@@ -343,7 +341,7 @@ export default function App() {
           <Modal
             visible={modalVisible}
             animationType="slide"
-            onRequestClose={() => setIsModalVisible(false)}
+            onRequestClose={() => setModalVisible(false)}
             transparent={true} // To add a backdrop effect
           >
             <View style={styles.modalBackdrop}>
@@ -365,7 +363,7 @@ export default function App() {
                   onChangeText={setLongitude}
                 />
                 <View style={styles.modalButtons}>
-                  <TouchableOpacity onPress={() => setIsModalVisible(false)}>
+                  <TouchableOpacity onPress={() => setModalVisible(false)}>
                     <Text style={styles.buttonText}>Cancel</Text>
                   </TouchableOpacity>
                   <TouchableOpacity onPress={handleSetCoordinates}>
@@ -401,12 +399,12 @@ const styles = StyleSheet.create({
   },
   textStyle: {
     color: 'black',
-    fontSize: 20,
+    fontSize: 17,
     fontFamily: 'Poppins-Bold',
   },
   textStyleMail: {
     color: 'blue',
-    fontSize: 18,
+    fontSize: 15,
     fontFamily: 'Poppins-Regular',
   },
   viewChanger: {
@@ -459,12 +457,13 @@ const styles = StyleSheet.create({
     width: 210,
     height: 40,
     backgroundColor: 'white',
-    marginBottom: 15,
+    marginBottom: 10,
     paddingHorizontal: 10,
     borderRadius: 5,
     borderWidth: 1,
     borderColor: '#ddd',
-    fontSize: 16,
+    fontSize: 13,
+    paddingTop: 10,
   },
   modalButtons: {
     flexDirection: 'row',
@@ -473,7 +472,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     color: 'green',
-    fontSize: 16,
+    fontSize: 14,
     paddingHorizontal: 10,
     paddingVertical: 5,
     fontFamily: 'Poppins-Bold',
@@ -481,7 +480,7 @@ const styles = StyleSheet.create({
   modalText: {
     color: 'black',
     fontFamily: 'Poppins-Bold',
-    fontSize: 16,
+    fontSize: 14,
     marginBottom: 1,
   },
 });

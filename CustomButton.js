@@ -18,11 +18,11 @@ const styles = StyleSheet.create({
     backgroundColor: 'green',
     justifyContent: 'center',
     borderRadius: 8,
-    paddingVertical: 8,
     marginVertical: 4,
+    height: 46,
   },
   buttonText: {
-    fontSize: 16,
+    fontSize: 14,
     textAlign: 'center',
     color: 'white',
     fontFamily: 'Poppins-Bold',
