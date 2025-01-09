@@ -2,35 +2,30 @@
 
 ## Overview
 
-This React Native application calculates and displays the straight-line (great-circle) distance between two selected locations on a map. The app includes user-friendly features such as geolocation, manual coordinate input, map type switching, and Lottie animations to enhance the user experience.
+This React Native application calculates and displays the straight-line distance between two selected locations on a map. The app supports geolocation, map type switching, and Lottie animations to enhance the user experience.
 
-### Key Features:
+## Key Features:
 
 - Map display with markers for two locations.
-- Calculation of the straight-line distance between the selected locations.
-- Dynamic updating of the distance as the user moves the markers.
-- Option to fetch and display the user's current location as a marker.
+- Straight-line distance calculation between the locations.
+- Dynamic distance updates as the markers are moved.
+- Option to fetch the user's current location.
 - Map type switching (standard, satellite, terrain).
-- Manual latitude and longitude input for precise marker placement.
+- Manual latitude and longitude input for marker placement.
 
-## Libraries Used
-
-The application utilizes the following libraries:
+## Libraries Used:
 
 - **react-native-maps**: For rendering the map and markers.
-- **geolib**: For calculating the distance between the source and destination.
-- **@react-native-community/geolocation**: For retrieving the user's current location.
-- **lottie-react-native**: For displaying Lottie animations.
-- **react-native-vector-icons**: For using icons in the app.
-- **PermissionsAndroid**: For managing permissions on Android devices.
+- **geolib**: For distance calculation.
+- **@react-native-community/geolocation**: For geolocation.
+- **lottie-react-native**: For animations.
+- **react-native-vector-icons**: For icons.
 
-## Project Setup
+## Setup
 
-### Prerequisites
+### Prerequisites:
 
-Ensure the following are installed on your machine:
-
-- Node.js (preferably the latest LTS version).
+- Node.js (LTS version).
 - React Native CLI.
 - Android Studio or Xcode (for iOS development).
 
@@ -61,34 +56,21 @@ Ensure the following are installed on your machine:
 
 ## Configuration
 
-### Custom Fonts and Lottie Animation
+- **Custom Fonts**: The app uses "Poppins-Bold" and "Poppins-Regular" fonts included in the assets.
+- **Lottie Animation**: The app uses a loading screen with a Lottie animation (Loading2.json).
+- **Custom Button Component**: A reusable button component is created in `./CustomButton.js`.
 
-- The app uses custom fonts, such as **"Poppins-Bold"** and **"Poppins-Regular"**, which are included in the assets.
-- Lottie animations are used for the loading screen, with a JSON animation file (**Loading2.json**) included in the assets folder.
+## Permissions
 
-### Custom Button Component
+The app requests location permissions:
 
-A custom button component has been created for reuse throughout the application. The component is located in `./CustomButton.js` and allows for consistent styling and functionality across different parts of the app.
-
-### Permissions
-
-The app requires location permissions to access the user's current location:
-
-- **Android**: The app requests the `ACCESS_FINE_LOCATION` permission using the `PermissionsAndroid` module.
-- **iOS**: The app requests location permissions via the standard iOS location services.
+- **Android**: `ACCESS_FINE_LOCATION` permission.
+- **iOS**: Standard location services permissions.
 
 ## Usage
 
-Once the app is launched, the following actions can be performed:
-
-- **Choose Source**: Select a location on the map to set as the source by tapping or dragging the marker.
-- **Choose Destination**: Select a location on the map to set as the destination by tapping or dragging the marker.
-- **Show Distance**: The app will dynamically calculate the straight-line distance between the source and destination as the markers are moved.
-- **Reset Markers**: There is a button to remove the source or destination markers and start the selection process again.
-- **Switch Map View**: The app allows you to toggle between different map types: standard, satellite, and terrain.
-
-## Additional Information
-
-- The application was built using the **React Native CLI**.
-- The app was developed with the intention of providing a seamless user experience with intuitive navigation and dynamic features.
-- All code is modular, clean, and well-documented for easy understanding and future enhancements.
+- **Choose Source**: Set a location on the map as the source by tapping or dragging the marker.
+- **Choose Destination**: Set the destination location similarly.
+- **Show Distance**: The straight-line distance is dynamically calculated.
+- **Reset Markers**: Reset source or destination markers.
+- **Switch Map View**: Toggle between standard, satellite, and terrain map types.
