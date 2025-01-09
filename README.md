@@ -69,8 +69,16 @@ The app requests location permissions:
 
 ## Usage
 
-- **Choose Source**: Set a location on the map as the source by tapping or dragging the marker.
-- **Choose Destination**: Set the destination location similarly.
-- **Show Distance**: The straight-line distance is dynamically calculated.
-- **Reset Markers**: Reset source or destination markers.
-- **Switch Map View**: Toggle between standard, satellite, and terrain map types.
+Once the app is launched, the following actions can be performed:
+
+- **Choose Source**: Select a location on the map to set as the source by tapping or dragging the marker.
+- **Choose Destination**: Select a location on the map to set as the destination by tapping or dragging the marker.
+- **Show Distance**: The app will dynamically calculate the straight-line distance between the source and destination as the markers are moved.
+- **Reset Markers**: There is a button to remove the source or destination markers and start the selection process again.
+- **Switch Map View**: The app allows you to toggle between different map types: standard, satellite, and terrain.
+
+## Additional Information
+
+- The application was built using the **React Native CLI**.
+- The app was developed with the intention of providing a seamless user experience with intuitive navigation and dynamic features.
+- All code is modular, clean, and well-documented for easy understanding and future enhancements.
