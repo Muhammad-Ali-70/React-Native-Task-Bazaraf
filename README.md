@@ -34,7 +34,7 @@ This React Native application calculates and displays the straight-line distance
 1. Clone the repository to your local machine:
 
    ```bash
-   git clone https://github.com/your-username/distance-between-locations.git
+   git clone https://github.com/Muhammad-Ali-70/React-Native-Task-Bazaraf
 
    ```
 
