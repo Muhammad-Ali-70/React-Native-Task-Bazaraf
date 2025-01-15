@@ -1,7 +1,7 @@
 import {StyleSheet, Text, TouchableOpacity, View} from 'react-native';
 import React from 'react';
 
-const CustomButton = ({widthProp, TextProp, OnPressEvent}) => {
+const CustomButton = ({widthProp = '46%', TextProp, OnPressEvent}) => {
   return (
     <TouchableOpacity
       style={[styles.mainContainer, {width: widthProp}]}
