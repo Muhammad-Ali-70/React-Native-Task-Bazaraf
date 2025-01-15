@@ -18,7 +18,7 @@ import {
   removeDestination,
   removeSource,
 } from './Utils/mapHandlers';
-import {useTimer} from './Utils/useTimer';
+import {useTimer} from './hooks/useTimer';
 
 export default function App() {
   const [Userlocation, setUserlocation] = useState(null);
